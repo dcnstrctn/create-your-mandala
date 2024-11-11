@@ -104,6 +104,13 @@
             font-size: 1em;
             color: #4a4a4a;
         }
+
+        .prompt2 {
+            font-family: 'Garamond', 'Georgia', serif; /* 设置为古典的衬线字体 */
+            font-size: 15px;                          /* 字体大小适当调整 */
+            color: #4a4a4a;                            /* 设置深灰色，以符合古典风 */
+            font-style: italic;                        
+        }
     </style>
 </head>
 <body>
@@ -117,7 +124,7 @@
 </div>
 
 <!-- 提示文字 -->
-<p class="prompt">Try a different image by clicking on the icons below:</p>
+<p class="prompt">Try a different pattern by clicking on the images below:</p>
 
 <!-- 第一组图片选择区域 -->
 <div class="load-container">
@@ -128,14 +135,15 @@
         <img src="assets/inputs/sunflower.jpg" alt="Mandala Base Cloud" onclick="loadMandala('assets/linedrawings/sunflower_line.png')">
         <img src="assets/inputs/butterffy.avif" alt="Mandala Base Cloud" onclick="loadMandala('assets/linedrawings/butterfly_line.png')">
     </div>
-    <button class="load-button">Select your source image</button>
+    <button class="load-button">Select your source pattern</button>
 </div>
+<p class="prompt2">🤔What does this charm represent for you? </p>
 
 <!-- 分隔区域，用于区分两个选择区域 -->
 <hr style="width: 80%; margin: 30px 0; border: 1px solid #ddd;">
 
 <!-- 第二个图片选择区域 -->
-<p class="prompt">Select a style image to see the effect:</p>
+<p class="prompt">Select a reference image to colorize your mandala:</p>
 <div class="load-container">
     <div class="load">
         <img src="assets/references/cloud_chinese.png" alt="Style Image 1" onclick="selectStyleImage('cloud_chinese')">
